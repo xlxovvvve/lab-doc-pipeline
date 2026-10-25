@@ -13,7 +13,13 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
-from assembler import AnchorError, AnchorRegistry, assert_unique_anchors, find_anchor, locate_all
+from assembler import (
+    AnchorError,
+    AnchorRegistry,
+    assert_unique_anchors,
+    find_anchor,
+    locate_all,
+)
 from validator import verify_alignment
 
 DOC = """1、动态库创建与调用
